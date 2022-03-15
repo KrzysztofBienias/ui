@@ -34,6 +34,11 @@ const Navigation = () => {
             Sidebar
           </StyledNavLink>
         </NavListItem>
+        <NavListItem>
+          <StyledNavLink isOpen={isOpen} exact to="/combobox">
+            Combobox
+          </StyledNavLink>
+        </NavListItem>
       </NavList>
     </Nav>
   );
