@@ -7,6 +7,7 @@ import InfiniteScroll from './components/InfiniteScroll/InfiniteScroll';
 import AccordionFaq from './components/AccordionFaq/AccordionFaq';
 import Sidebar from './components/Sidebar/Sidebar';
 import Combobox from './components/Combobox/Combobox';
+import FancyButtons from './components/FancyButtons/FancyButtons';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Router>
         <Navigation />
         <Routes>
+          <Route path="/fancy-buttons" element={<FancyButtons />} />
           <Route path="/combobox" element={<Combobox />} />
           <Route path="/sidebar" element={<Sidebar />} />
           <Route path="/accordion-faq" element={<AccordionFaq />} />

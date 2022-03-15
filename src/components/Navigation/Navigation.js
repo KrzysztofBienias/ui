@@ -39,6 +39,11 @@ const Navigation = () => {
             Combobox
           </StyledNavLink>
         </NavListItem>
+        <NavListItem>
+          <StyledNavLink isOpen={isOpen} exact to="/fancy-buttons">
+            Fancy Buttons
+          </StyledNavLink>
+        </NavListItem>
       </NavList>
     </Nav>
   );
