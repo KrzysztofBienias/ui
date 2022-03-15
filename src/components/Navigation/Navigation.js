@@ -19,6 +19,11 @@ const Navigation = () => {
             Home
           </StyledNavLink>
         </NavListItem>
+        <NavListItem>
+          <StyledNavLink isOpen={isOpen} exact to="/infinite-scroll">
+            Infinite Scroll
+          </StyledNavLink>
+        </NavListItem>
       </NavList>
     </Nav>
   );
