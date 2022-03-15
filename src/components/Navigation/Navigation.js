@@ -29,6 +29,11 @@ const Navigation = () => {
             Accordion Faq
           </StyledNavLink>
         </NavListItem>
+        <NavListItem>
+          <StyledNavLink isOpen={isOpen} exact to="/sidebar">
+            Sidebar
+          </StyledNavLink>
+        </NavListItem>
       </NavList>
     </Nav>
   );

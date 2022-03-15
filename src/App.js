@@ -5,6 +5,7 @@ import Welcome from './components/Welcome/Welcome';
 import Navigation from './components/Navigation/Navigation';
 import InfiniteScroll from './components/InfiniteScroll/InfiniteScroll';
 import AccordionFaq from './components/AccordionFaq/AccordionFaq';
+import Sidebar from './components/Sidebar/Sidebar';
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Router>
         <Navigation />
         <Routes>
+          <Route path="/sidebar" element={<Sidebar />} />
           <Route path="/accordion-faq" element={<AccordionFaq />} />
           <Route path="/infinite-scroll" element={<InfiniteScroll />} />
           <Route path="/" element={<Welcome />} />
