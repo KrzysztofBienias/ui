@@ -24,6 +24,11 @@ const Navigation = () => {
             Infinite Scroll
           </StyledNavLink>
         </NavListItem>
+        <NavListItem>
+          <StyledNavLink isOpen={isOpen} exact to="/accordion-faq">
+            Accordion Faq
+          </StyledNavLink>
+        </NavListItem>
       </NavList>
     </Nav>
   );
