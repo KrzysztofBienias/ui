@@ -15,33 +15,38 @@ const Navigation = () => {
       <NavButton onClick={() => setIsOpen(!isOpen)}>🍔</NavButton>
       <NavList>
         <NavListItem>
-          <StyledNavLink isOpen={isOpen} exact to="/">
+          <StyledNavLink exact to="/">
             Home
           </StyledNavLink>
         </NavListItem>
         <NavListItem>
-          <StyledNavLink isOpen={isOpen} exact to="/infinite-scroll">
+          <StyledNavLink exact to="/infinite-scroll">
             Infinite Scroll
           </StyledNavLink>
         </NavListItem>
         <NavListItem>
-          <StyledNavLink isOpen={isOpen} exact to="/accordion-faq">
+          <StyledNavLink exact to="/accordion-faq">
             Accordion Faq
           </StyledNavLink>
         </NavListItem>
         <NavListItem>
-          <StyledNavLink isOpen={isOpen} exact to="/sidebar">
+          <StyledNavLink exact to="/sidebar">
             Sidebar
           </StyledNavLink>
         </NavListItem>
         <NavListItem>
-          <StyledNavLink isOpen={isOpen} exact to="/combobox">
+          <StyledNavLink exact to="/combobox">
             Combobox
           </StyledNavLink>
         </NavListItem>
         <NavListItem>
-          <StyledNavLink isOpen={isOpen} exact to="/fancy-buttons">
+          <StyledNavLink exact to="/fancy-buttons">
             Fancy Buttons
+          </StyledNavLink>
+        </NavListItem>
+        <NavListItem>
+          <StyledNavLink exact to="/cool-transitions/demo-1">
+            Cool Transitions
           </StyledNavLink>
         </NavListItem>
       </NavList>

@@ -1,5 +1,10 @@
 import React, { useState } from 'react';
-import { MenuToggleButton, Navigation, Content } from './Sidebar.styled';
+import {
+  MenuToggleButton,
+  Navigation,
+  Content,
+  StyledNavLink,
+} from './Sidebar.styled';
 
 const Sidebar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,29 +21,19 @@ const Sidebar = () => {
       <Navigation isOpen={isOpen}>
         <ul>
           <li>
-            <a tabIndex={isOpen ? null : '-1'} href="/">
-              Lorem
-            </a>
+            <StyledNavLink to="/">Lorem</StyledNavLink>
           </li>
           <li>
-            <a tabIndex={isOpen ? null : '-1'} href="/">
-              Ipsum
-            </a>
+            <StyledNavLink to="/">Ipsum</StyledNavLink>
           </li>
           <li>
-            <a tabIndex={isOpen ? null : '-1'} href="/">
-              Dolor
-            </a>
+            <StyledNavLink to="/">Dolor</StyledNavLink>
           </li>
           <li>
-            <a tabIndex={isOpen ? null : '-1'} href="/">
-              Sit
-            </a>
+            <StyledNavLink to="/">Sit</StyledNavLink>
           </li>
           <li>
-            <a tabIndex={isOpen ? null : '-1'} href="/">
-              Amet
-            </a>
+            <StyledNavLink to="/">Amet</StyledNavLink>
           </li>
         </ul>
       </Navigation>

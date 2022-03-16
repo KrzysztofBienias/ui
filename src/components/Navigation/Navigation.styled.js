@@ -25,16 +25,15 @@ export const NavListItem = styled.li`
   margin: 10px 0;
 `;
 
-const activeClassName = 'selected';
 export const StyledNavLink = styled(NavLink).attrs((props) => ({
-  tabIndex: props.isOpen ? null : '-1',
-  activeClassName,
+  tabIndex: props.isActive ? null : '-1',
 }))`
   font-family: 'IBM Plex Mono', monospace;
   text-decoration: none;
   color: black;
   font-size: 14px;
-  &.${activeClassName} {
+
+  &.active {
     font-weight: bold;
   }
 `;
