@@ -49,6 +49,11 @@ const Navigation = () => {
             Cool Transitions
           </StyledNavLink>
         </NavListItem>
+        <NavListItem>
+          <StyledNavLink exact to="/animated-svg">
+            Animated Svg
+          </StyledNavLink>
+        </NavListItem>
       </NavList>
     </Nav>
   );
