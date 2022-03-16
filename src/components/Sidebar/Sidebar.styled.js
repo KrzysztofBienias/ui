@@ -1,4 +1,5 @@
 import styled, { keyframes } from 'styled-components';
+import { NavLink } from 'react-router-dom';
 
 const AppearAnimation = keyframes`
   from {
@@ -57,15 +58,6 @@ export const Navigation = styled.nav`
 
     li {
       margin: 20px 0;
-
-      a {
-        font-size: 25px;
-        text-decoration: none;
-
-        &:hover {
-          text-decoration: underline;
-        }
-      }
     }
   }
 `;
@@ -149,5 +141,16 @@ export const MenuToggleButton = styled.button`
     &::after {
       transform: translate(-50%, -50%) rotate(-45deg);
     }
+  }
+`;
+
+export const StyledNavLink = styled(NavLink).attrs((props) => ({
+  tabIndex: props.isActive ? null : '-1',
+}))`
+  font-size: 25px;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
   }
 `;
