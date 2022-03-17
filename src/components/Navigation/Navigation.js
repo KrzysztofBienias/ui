@@ -54,6 +54,11 @@ const Navigation = () => {
             Animated Svg
           </StyledNavLink>
         </NavListItem>
+        <NavListItem>
+          <StyledNavLink exact to="/scroll-animations">
+            Scroll Animations
+          </StyledNavLink>
+        </NavListItem>
       </NavList>
     </Nav>
   );
