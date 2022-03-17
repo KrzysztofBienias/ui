@@ -10,6 +10,7 @@ import Combobox from './components/Combobox/Combobox';
 import FancyButtons from './components/FancyButtons/FancyButtons';
 import CoolTransitions from './components/CoolTransitions/CoolTransitions';
 import AnimatedSvg from './components/AnimatedSvg/AnimatedSvg';
+import ScrollAnimations from './components/ScrollAnimations/ScrollAnimations';
 
 const App = () => {
   return (
@@ -18,6 +19,7 @@ const App = () => {
       <Router>
         <Navigation />
         <Routes>
+          <Route path="scroll-animations" element={<ScrollAnimations />} />
           <Route path="animated-svg" element={<AnimatedSvg />} />
           <Route path="cool-transitions/*" element={<CoolTransitions />} />
           <Route path="fancy-buttons" element={<FancyButtons />} />
