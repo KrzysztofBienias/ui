@@ -59,6 +59,11 @@ const Navigation = () => {
             Scroll Animations
           </StyledNavLink>
         </NavListItem>
+        <NavListItem>
+          <StyledNavLink exact to="/page-transition/home">
+            Page Transition
+          </StyledNavLink>
+        </NavListItem>
       </NavList>
     </Nav>
   );
