@@ -11,6 +11,7 @@ import FancyButtons from './components/FancyButtons/FancyButtons';
 import CoolTransitions from './components/CoolTransitions/CoolTransitions';
 import AnimatedSvg from './components/AnimatedSvg/AnimatedSvg';
 import ScrollAnimations from './components/ScrollAnimations/ScrollAnimations';
+import PageTransition from './components/PageTransition/PageTransition';
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
       <Router>
         <Navigation />
         <Routes>
+          <Route path="page-transition/*" element={<PageTransition />} />
           <Route path="scroll-animations" element={<ScrollAnimations />} />
           <Route path="animated-svg" element={<AnimatedSvg />} />
           <Route path="cool-transitions/*" element={<CoolTransitions />} />
