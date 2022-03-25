@@ -10,7 +10,6 @@ export const Container = styled.div`
   top: 0;
 
   h2 {
-    color: white;
     font-size: 100px;
     font-family: 'Cormorant Garamond', serif;
     text-transform: uppercase;
